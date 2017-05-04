@@ -1,0 +1,26 @@
+{
+    "name" : "The Foundry Modo",
+    "version" : "11.0v1",
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "F1" : [
+                {"name":"Activate Help", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New scene", "mods":["CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Save current scene", "mods":["CONTROL"]},
+                {"name":"Save scene as...", "mods":["CONTROL", "SHIFT"]}
+            ]
+        },
+        "General Modeling" : {
+            "Q" : [
+                {"name":"Drop active tool", "mods":[]}
+            ]
+        }
+    }
+}
