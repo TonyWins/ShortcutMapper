@@ -15,7 +15,7 @@ var sitedata_apps = [
     {
         name: "Adobe Illustrator",
         data: {
-            "CC": {
+            "CC 2018": {
                 "mac": "adobe-illustrator_cc_mac.json",
                 "windows": "adobe-illustrator_cc_windows.json",
             },
@@ -159,7 +159,7 @@ var sitedata_apps = [
     {
         name: "SketchUp",
         data: {
-            "2016": {
+            "2018": {
                 "mac": "sketchup_2016_mac.json",
                 "windows": "sketchup_2016_windows.json",
             },
@@ -177,9 +177,9 @@ var sitedata_apps = [
     {
         name: "The Foundry Modo",
         data: {
-            "11.0v1": {
-                "mac": "the-foundry-modo_11.0v1_mac.json",
-                "windows": "the-foundry-modo_11.0v1_windows.json",
+            "11.2v2": {
+                "mac": "the-foundry-modo_mac.json",
+                "windows": "the-foundry-modo_windows.json",
             },
         }
     },
