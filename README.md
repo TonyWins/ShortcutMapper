@@ -1,7 +1,7 @@
 ShortcutMapper
 ==================
 
-This is a keyboard shortcuts visualiser hosted on Github: http://waldobronchart.github.io/ShortcutMapper/
+This is a keyboard shortcuts visualiser hosted on Github: https://tonywins.github.io/ShortcutMapper/
 
 ![Imgur](http://waldobronchart.github.io/ShortcutMapper/content/images/overview.gif)
 
