@@ -221,6 +221,7 @@
                 {"name":"Render Selected", "mods":["SHIFT"]}
             ],
             "G" : [
+                {"name":"Center View to Cursor", "mods":[]},
                 {"name":"Group Selected Layers", "mods":["CONTROL"]},
                 {"name":"Select Between", "mods":["SHIFT"]}
             ],
@@ -931,7 +932,7 @@
                 {"name":"Zoom out x2", "mods":["SHIFT"]}
             ],
             "G" : [
-                {"name":"Center the view on the cursor's position", "mods":[]}
+                {"name":"Center View to Cursor", "mods":[]}
             ],
             "PERIOD" : [
                 {"name":"Zoom in (only in component modes)", "mods":[]},
