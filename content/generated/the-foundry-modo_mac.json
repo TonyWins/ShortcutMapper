@@ -3,503 +3,984 @@
     "version" : "11.2v2",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "SHIFT"],
-    "default_context" : "Global Context",
+    "default_context" : "General/System",
     "contexts" : {
-        "Color Picker" : {
-            "LEFT_ARROW" : [
-                {"name":"Scrub the value up or down fast", "mods":[]}
-            ]
-        },
-        "Curve Editor and Dope Sheet" : {
+    "Animation: Graph Editor" : {
             "A" : [
-                {"name":"Select all curves", "mods":["COMMAND"]}
-            ],
-            "C" : [
-                {"name":"Change interpolation of selected control points to Cubic", "mods":[]},
-                {"name":"Copy selected curves", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Copy selected keys", "mods":["COMMAND"]}
-            ],
-            "D" : [
-                {"name":"Toggle the always in the Dope Sheet box on the node’s properties panel. When active, the node always displays in the Dope Sheet, instead of just displaying when its properties panel is open", "mods":["ALT"]}
-            ],
-            "E" : [
-                {"name":"Copy expressions", "mods":["COMMAND"]}
+                {"name":"Fit Selected", "mods":[]}
             ],
             "F" : [
-                {"name":"Fit selection in the window", "mods":[]}
-            ],
-            "H" : [
-                {"name":"Change interpolation of selected control points to Horizontal", "mods":[]}
-            ],
-            "K" : [
-                {"name":"Change interpolation of selected control points to Constant", "mods":[]}
-            ],
-            "L" : [
-                {"name":"Change interpolation of selected control points to Linear", "mods":[]},
-                {"name":"Copy links", "mods":["COMMAND"]}
-            ],
-            "R" : [
-                {"name":"Change interpolation of selected control points to Catmull-Rom", "mods":[]}
+                {"name":"Fit Visible", "mods":["COMMAND"]},
+                {"name":"Fit Visible Width", "mods":["SHIFT"]}
             ],
             "V" : [
-                {"name":"Paste curve", "mods":["COMMAND"]}
-            ],
-            "X" : [
-                {"name":"Break selected control points’ handles", "mods":[]},
-                {"name":"Cut selected keys", "mods":["COMMAND"]}
-            ],
-            "Z" : [
-                {"name":"Change interpolation of selected control points to Smooth ", "mods":[]}
+                {"name":"Insert Keyframes", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Replace keyframes", "mods":["ALT", "COMMAND"]}
             ]
         },
-        "Editing" : {
-            "B" : [
-                {"name":"Left justify selected text", "mods":["COMMAND"]}
-            ],
-            "BACKSPACE" : [
-                {"name":"Erase or Delete Left", "mods":[]}
-            ],
-            "C" : [
-                {"name":"Copy", "mods":["COMMAND"]}
-            ],
-            "E" : [
-                {"name":"Move cursor to end of selected text", "mods":["COMMAND"]}
-            ],
-            "F" : [
-                {"name":"Right justify selected text", "mods":["COMMAND"]}
-            ],
-            "K" : [
-                {"name":"Delete text from the cursor to the next space", "mods":["COMMAND"]}
-            ],
-            "N" : [
-                {"name":"Bottom justify selected text", "mods":["COMMAND"]}
+        "Animation: Hierarchy" : {
+            "G" : [
+                {"name":"Group Selected Items", "mods":["COMMAND"]}
             ],
             "P" : [
-                {"name":"Top justify selected text", "mods":["COMMAND"]}
-            ],
-            "V" : [
-                {"name":"Paste ", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Paste knob values", "mods":["ALT", "COMMAND"]},
-                {"name":"Paste", "mods":["COMMAND"]}
-            ],
-            "X" : [
-                {"name":"Cut", "mods":["COMMAND"]}
+                {"name":"Parent in Place", "mods":[]},
+                {"name":"Parent", "mods":["COMMAND"]},
+                {"name":"Unparent", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Unparent in Place", "mods":["SHIFT"]}
             ]
         },
-        "Global Context" : {
-            "C" : [
-                {"name":"3D view, bottom orthographic", "mods":["SHIFT"]}
+        "Animation: Selection" : {
+            "Z" : [
+                {"name":"Select All Animated Channels", "mods":[]}
+            ]
+        },
+        "Animation: Setting Keyframes" : {
+            "E" : [
+                {"name":"Key Rotations", "mods":["SHIFT"]}
             ],
-            "G" : [
-                {"name":"Go to a specific frame", "mods":["ALT"]}
-            ],
-            "I" : [
-                {"name":"Display script information, such as the node count, channel count, cache usage, and whether the script is in full-res or proxy mode", "mods":["ALT"]},
-                {"name":"Open new Viewer window", "mods":["COMMAND"]}
-            ],
-            "L" : [
-                {"name":"Toggle between Unlocked and Locked 3D view mode for selected Camera or Light", "mods":["COMMAND"]}
-            ],
-            "N" : [
-                {"name":"Launch a new project window in a new instance of Nuke", "mods":["COMMAND"]}
-            ],
-            "NUMPAD_SLASH" : [
-                {"name":"Search by node name or class", "mods":[]}
-            ],
-            "O" : [
-                {"name":"Open a script file", "mods":["COMMAND"]}
-            ],
-            "Q" : [
-                {"name":"Exit Nuke", "mods":["COMMAND"]}
+            "R" : [
+                {"name":"Key Scale", "mods":["SHIFT"]}
             ],
             "S" : [
-                {"name":"Make the active  window fullscreen", "mods":["ALT"]},
-                {"name":"Open the Nuke Preferences dialog", "mods":["SHIFT"]},
-                {"name":"Save script and increment version number", "mods":["ALT", "SHIFT"]},
-                {"name":"Save script and specify name ", "mods":["COMMAND", "SHIFT"]}
-            ],
-            "SLASH" : [
-                {"name":"Search by node name or class", "mods":[]}
-            ],
-            "T" : [
-                {"name":"Cycle through tabs in the current pane. Note that this does not work if the focus is on the input pane of the Script Editor", "mods":["COMMAND"]}
-            ],
-            "TAB" : [
-                {"name":"3D / 2D view toggle", "mods":[]}
-            ],
-            "U" : [
-                {"name":"Enable or disable previewing output on an external broadcast video monitor", "mods":["COMMAND"]}
-            ],
-            "V" : [
-                {"name":"3D view, perspective", "mods":[]}
-            ],
-            "X" : [
-                {"name":"3D view, left-side orthographic", "mods":["SHIFT"]},
-                {"name":"3D view, right-side orthographic", "mods":[]}
-            ],
-            "Y" : [
-                {"name":"Redo last action", "mods":["COMMAND"]}
-            ],
-            "Z" : [
-                {"name":"3D view, back orthographic", "mods":["SHIFT"]},
-                {"name":"3D view, front-side orthographic", "mods":[]},
-                {"name":"Undo last action", "mods":["COMMAND"]}
-            ]
-        },
-        "Node Graph" : {
-            "A" : [
-                {"name":"Insert an AddMix node", "mods":["SHIFT"]},
-                {"name":"Select all nodes in the Node Graph or group window", "mods":["COMMAND"]}
-            ],
-            "B" : [
-                {"name":"Duplicate and branch selected nodes", "mods":["ALT"]},
-                {"name":"Insert Filter Blur node", "mods":[]},
-                {"name":"Node buffer toggle. When this is on, the output from the node is cached or kept in memory, so that it can be read quickly. A yellow line displays under the node to indicate that the caching is on", "mods":["COMMAND"]}
-            ],
-            "BACKSLASH" : [
-                {"name":"Snaps all nodes to the grid. ", "mods":[]},
-                {"name":"Snaps selected node to the grid", "mods":["SHIFT"]}
-            ],
-            "C" : [
-                {"name":"Copy selected nodes", "mods":["COMMAND"]},
-                {"name":"Duplicate selected nodes", "mods":["ALT"]},
-                {"name":"Insert a ColorCorrect node", "mods":[]},
-                {"name":"Set color for selected nodes", "mods":["COMMAND", "SHIFT"]}
-            ],
-            "COMMAND" : [
-                {"name":"Display connector dots. Drag one to set a dot and create an “elbow.”", "mods":[]}
-            ],
-            "D" : [
-                {"name":"Disable / enable selected node", "mods":[]},
-                {"name":"Disconnect upstream node from selected node", "mods":["COMMAND"]}
-            ],
-            "DELETE" : [
-                {"name":"Remove selected nodes", "mods":[]}
-            ],
-            "DOWN_ARROW" : [
-                {"name":"Decrement the version number in the selected node’s file name", "mods":["ALT"]},
-                {"name":"Move selected node downstream", "mods":["COMMAND"]},
-                {"name":"Selects the previous or next node in the tree", "mods":[]}
-            ],
-            "ENTER" : [
-                {"name":"Open panel for selected node", "mods":[]},
-                {"name":"Open window for selected group node", "mods":["COMMAND"]}
-            ],
-            "F" : [
-                {"name":"Fit the selected nodes  to the Node Graph panel or group window", "mods":[]},
-                {"name":"Generate flipbook for selected node using FrameCycler", "mods":["ALT"]}
-            ],
-            "F12" : [
-                {"name":"Clear buffers", "mods":[]}
-            ],
-            "G" : [
-                {"name":"Nest selected nodes inside a Group node, keeping the original nodes in the layout. Ctrl+Enter opens the new Group node", "mods":["ALT", "COMMAND", "SHIFT"]},
-                {"name":"Nest selected nodes inside a Group node, replacing the original nodes with the Group", "mods":["COMMAND"]},
-                {"name":"Replace selected Group node with the nodes nested inside it", "mods":["ALT", "COMMAND"]},
-                {"name":"insert a Grade node", "mods":[]}
-            ],
-            "HASH" : [
-                {"name":"Opens a new Viewer window with # representing the number of the connection  you want to establish between the new Viewer and the selected node", "mods":[]},
-                {"name":"Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%", "mods":["COMMAND"]},
-                {"name":"Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%", "mods":["ALT"]}
-            ],
-            "I" : [
-                {"name":"Display information for selected node", "mods":[]}
-            ],
-            "K" : [
-                {"name":"Clone selected nodes", "mods":["ALT"]},
-                {"name":"Insert Copy node. Note that for this to work, you first need to click on the Node Graph to select it. If you have selected the Viewer, pressing K stops playback", "mods":[]},
-                {"name":"Remove selected nodes from clone group ", "mods":["ALT", "SHIFT"]}
-            ],
-            "M" : [
-                {"name":"Insert Merge node", "mods":[]}
-            ],
-            "MINUS" : [
-                {"name":"Zoom-out", "mods":[]}
-            ],
-            "N" : [
-                {"name":"Rename the selected node", "mods":[]}
-            ],
-            "NUMPAD_MINUS" : [
-                {"name":"Zoom-out", "mods":[]}
-            ],
-            "NUMPAD_PERIOD" : [
-                {"name":"Inserts Dot node", "mods":[]}
-            ],
-            "NUMPAD_PLUS" : [
-                {"name":"Zoom-in . See also LMB+MMB", "mods":[]}
-            ],
-            "O" : [
-                {"name":"Insert Roto node", "mods":[]}
-            ],
-            "P" : [
-                {"name":"Insert RotoPaint node", "mods":[]},
-                {"name":"Toggle proxy resolution, as defined on the Settings properties panel", "mods":["COMMAND"]}
-            ],
-            "PERIOD" : [
-                {"name":"Inserts Dot node", "mods":[]}
-            ],
-            "PLUS" : [
-                {"name":"Zoom-in . See also LMB+MMB", "mods":[]}
-            ],
-            "R" : [
-                {"name":"Insert a Read node. NOTE:  Pressing R with an existing Read node selected, opens the file browser at the location specified by that node", "mods":[]}
-            ],
-            "T" : [
-                {"name":"Insert a Transform node", "mods":[]}
-            ],
-            "TAB" : [
-                {"name":"Open a text field where you can enter the first letters of a node name to bring up a list of matches. Press Return to insert a node from the list", "mods":[]}
-            ],
-            "U" : [
-                {"name":"Splay first selected node to input A", "mods":["ALT"]},
-                {"name":"Splay last selected node to input A", "mods":["ALT", "SHIFT"]},
-                {"name":"Splay selected nodes to first selected node", "mods":[]},
-                {"name":"Splay selected nodes to last selected node", "mods":["SHIFT"]}
-            ],
-            "UP_ARROW" : [
-                {"name":"Increment the version number in the selected node’s file name", "mods":["ALT"]},
-                {"name":"Move selected node upstream", "mods":["COMMAND"]},
-                {"name":"Selects the previous or next node in the tree", "mods":[]}
+                {"name":"Key Selected Channels", "mods":[]},
+                {"name":"Key Selected Items", "mods":["SHIFT"]}
             ],
             "W" : [
-                {"name":"Close current script file", "mods":["COMMAND"]},
-                {"name":"Insert a Write node", "mods":[]}
-            ],
-            "X" : [
-                {"name":"Extract selected nodes", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Swap A/B inputs on selected node", "mods":["SHIFT"]}
+                {"name":"Key Positions", "mods":["SHIFT"]}
             ],
             "Y" : [
-                {"name":"Connect first selected node to the output of the second selected node", "mods":[]},
-                {"name":"Connect second selected node to the output of the first selected node", "mods":["SHIFT"]}
+                {"name":"Key Transforms", "mods":["SHIFT"]}
             ]
         },
-        "Properties Panels" : {
-            "A" : [
-                {"name":"Close all open properties panels", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Select all nodes in the Properties Bin", "mods":["COMMAND"]}
-            ],
+        "Animation: Timeline" : {
             "DOWN_ARROW" : [
-                {"name":"Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter", "mods":[]}
-            ],
-            "ENTER" : [
-                {"name":"Chooses selected UI control ", "mods":[]},
-                {"name":"Close the current panel", "mods":["COMMAND"]}
-            ],
-            "R" : [
-                {"name":"Fit Properties Bin to open panels", "mods":["ALT"]},
-                {"name":"Fit Properties Bin to open panels", "mods":["COMMAND"]}
-            ],
-            "TAB" : [
-                {"name":"Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel", "mods":["SHIFT"]},
-                {"name":"Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel", "mods":[]},
-                {"name":"Move to next tabbed page  or the previous tabbed page  in the properties panel", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Move to next tabbed page  or the previous tabbed page  in the properties panel", "mods":["COMMAND"]}
-            ],
-            "UP_ARROW" : [
-                {"name":"Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter", "mods":[]}
-            ]
-        },
-        "RotoPaint Draw" : {
-            "A" : [
-                {"name":"Select all points", "mods":["COMMAND"]}
-            ],
-            "BACKSPACE" : [
-                {"name":"Delete an item from the stroke/shape list. Note that if the RotoPaint node is selected in the Node Graph, pressing Backspace deletes the entire node", "mods":[]}
-            ],
-            "C" : [
-                {"name":"Toggle between Clone and Reveal tools", "mods":[]}
-            ],
-            "D" : [
-                {"name":"Toggle between Dodge and Burn tools", "mods":[]}
-            ],
-            "DELETE" : [
-                {"name":"Remove selected points", "mods":[]}
-            ],
-            "E" : [
-                {"name":"Increase feather for selected points", "mods":[]},
-                {"name":"Remove feather outline from selected points", "mods":["SHIFT"]}
-            ],
-            "ENTER" : [
-                {"name":"Close shape", "mods":[]}
-            ],
-            "I" : [
-                {"name":"Pick color", "mods":[]}
-            ],
-            "N" : [
-                {"name":"Toggle between Brush and Eraser tools", "mods":[]}
-            ],
-            "Q" : [
-                {"name":"Toggle between Select All, Select Curves and Select Points tools", "mods":[]}
-            ],
-            "SHIFT" : [
-                {"name":"Drag the transform box points to move them", "mods":["COMMAND"]}
-            ],
-            "T" : [
-                {"name":"Show/hide source as onion skin with transform box/jack", "mods":[]}
-            ],
-            "V" : [
-                {"name":"Toggle between Bezier, B-Spline, Ellipse and Rectangle tools", "mods":[]}
-            ],
-            "X" : [
-                {"name":"Toggle between Blur, Sharpen, and Smear tools", "mods":[]}
-            ],
-            "Z" : [
-                {"name":"Make selected points linear ", "mods":["SHIFT"]},
-                {"name":"Make tangent handles horizontal on selected points ", "mods":[]}
-            ]
-        },
-        "Script Editor" : {
-            "BACKSPACE" : [
-                {"name":"Clear output pane", "mods":["COMMAND"]}
-            ],
-            "ENTER" : [
-                {"name":"Run the script in the Editor", "mods":["COMMAND"]}
-            ],
-            "LEFT_BRACKET" : [
-                {"name":"Decrease the indentation level of selected text", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Step back to the previous statement", "mods":["COMMAND"]}
-            ],
-            "RIGHT_BRACKET" : [
-                {"name":"Increase the indentation level of selected text", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Step forward to the next statement", "mods":["COMMAND"]}
-            ],
-            "TAB" : [
-                {"name":"Decrease the indentation level", "mods":["SHIFT"]},
-                {"name":"Increase the indentation level", "mods":[]}
-            ]
-        },
-        "Viewers" : {
-            "A" : [
-                {"name":"Display the alpha channel or the channel displayed in the list at the top of the Viewer", "mods":[]},
-                {"name":"Display “other” channel / RGB toggle. Current input only. ", "mods":["SHIFT"]}
-            ],
-            "B" : [
-                {"name":"Display Blue channel / RGB toggle. Current input only", "mods":["SHIFT"]},
-                {"name":"Display blue channel / RGB toggle", "mods":[]}
-            ],
-            "BACKSPACE" : [
-                {"name":"Activate Wipe. Cycle images on right side", "mods":["SHIFT"]},
-                {"name":"Cycle through Viewer inputs in reverse order. If wipe is active, cycles through inputs on the left-hand side", "mods":[]}
-            ],
-            "COMMA" : [
-                {"name":"Gain display, decrease", "mods":[]}
-            ],
-            "END" : [
-                {"name":"Go to last frame", "mods":[]}
-            ],
-            "ESCAPE" : [
-                {"name":"Close Viewer", "mods":[]}
-            ],
-            "EXCLAMATION" : [
-                {"name":"Turn on Viewer “blend,” split-screen display. ", "mods":[]}
-            ],
-            "F" : [
-                {"name":"Fit image to Viewer", "mods":[]},
-                {"name":"Maximum Viewer window toggle", "mods":["SHIFT"]}
-            ],
-            "G" : [
-                {"name":"Display Green channel / RGB toggle. Current input only", "mods":["SHIFT"]},
-                {"name":"Display green channel / RGB toggle", "mods":[]},
-                {"name":"Go to specific frame", "mods":["ALT"]}
-            ],
-            "H" : [
-                {"name":"Fill image in Viewer", "mods":[]}
-            ],
-            "HASH" : [
-                {"name":"Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%", "mods":["COMMAND"]},
-                {"name":"Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%", "mods":["ALT"]}
-            ],
-            "J" : [
-                {"name":"Play backward", "mods":[]}
-            ],
-            "K" : [
-                {"name":"Stop playback. Note that for this to work, you first need to click on the Viewer to select it. If you have selected the Node Graph, pressing K inserts a Copy node", "mods":[]}
-            ],
-            "L" : [
-                {"name":"Display Luminance / RGB toggle. Current input only", "mods":["SHIFT"]},
-                {"name":"Play forward", "mods":[]}
+                {"name":"Last Keyframe", "mods":["COMMAND"]}
             ],
             "LEFT_ARROW" : [
-                {"name":"Move left on the timeline by the specified increment amount", "mods":["SHIFT"]},
-                {"name":"Move to midpoint between current frame and previous keyframe/first frame", "mods":["COMMAND"]},
-                {"name":"Previous keyframe", "mods":["ALT"]},
-                {"name":"Step back one frame", "mods":[]}
-            ],
-            "LEFT_BRACE" : [
-                {"name":"Show / hide top toolbar", "mods":[]}
-            ],
-            "M" : [
-                {"name":"Display Matte / RGB toggle. Current input only", "mods":["SHIFT"]},
-                {"name":"Display Matte, or alpha channel as transparent overlay", "mods":[]}
-            ],
-            "MINUS" : [
-                {"name":"Zoom-out", "mods":[]}
-            ],
-            "NUMPAD_MINUS" : [
-                {"name":"Zoom-out", "mods":[]}
-            ],
-            "NUMPAD_PERIOD" : [
-                {"name":"Gain display, increase", "mods":[]}
-            ],
-            "NUMPAD_PLUS" : [
-                {"name":"Zoom-in ", "mods":[]}
-            ],
-            "O" : [
-                {"name":"Show / hide overlays", "mods":[]}
-            ],
-            "P" : [
-                {"name":"Disable  the display refresh of the Viewer", "mods":[]},
-                {"name":"Open the controls of the currently active Viewer process", "mods":["ALT"]},
-                {"name":"With the mouse pointer over the Viewer, this keystroke toggles pixel aspect ratio between square and non-square, according to the setting of the default format under the Settings properties panel. This is not the same as toggling proxy resolution ", "mods":["COMMAND"]}
-            ],
-            "PERIOD" : [
-                {"name":"Gain display, increase", "mods":[]}
-            ],
-            "PLUS" : [
-                {"name":"Zoom-in ", "mods":[]}
-            ],
-            "R" : [
-                {"name":"Display Red channel / RGB toggle. Current input only", "mods":["SHIFT"]},
-                {"name":"Display red channel / RGB toggle", "mods":[]},
-                {"name":"Resize Viewer and image to fit frame", "mods":["ALT", "SHIFT"]},
-                {"name":"Resize Viewer to image ", "mods":["ALT"]},
-                {"name":"Resize Viewer to maximum and fit image", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Resize Viewer window to image ", "mods":["COMMAND"]}
+                {"name":"Previous Keyframe", "mods":["COMMAND"]},
+                {"name":"Back One Frame", "mods":["SHIFT"]}
             ],
             "RIGHT_ARROW" : [
-                {"name":"Move right on the timeline by the specified increment amount", "mods":["SHIFT"]},
-                {"name":"Move to midpoint between current frame and next keyframe/last frame", "mods":["COMMAND"]},
-                {"name":"Next keyframe", "mods":["ALT"]},
-                {"name":"Step forward one frame", "mods":[]}
+                {"name":"Next Keyframe", "mods":["COMMAND"]},
+                {"name":"Forward One Frame", "mods":["SHIFT"]}
             ],
-            "RIGHT_BRACE" : [
-                {"name":"Show / hide bottom toolbar", "mods":[]}
+            "UP_ARROW" : [
+                {"name":"First Keyframe", "mods":["COMMAND"]},
+                {"name":"First Frame", "mods":["SHIFT"]}
+            ],
+            "SLASH" : [
+                {"name":"Start/Stop Animation Playback", "mods":[]}
+            ]
+        },
+        "Camera" : {
+            "A" : [
+                {"name":"Auto Focus Camera", "mods":["COMMAND"]}
+            ],
+            "F" : [
+                {"name":"Restart Preview", "mods":["COMMAND"]}
+            ]
+        },
+        "General/System" : {
+            "A" : [
+                {"name":"Fit All", "mods":[]},
+                {"name":"Action Center Auto", "mods":["ALT"]},
+                {"name":"Select All", "mods":["ALT", "SHIFT"]},
+                {"name":"Align Selected", "mods":["COMMAND"]},
+                {"name":"Fit and Align Selected", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Fit Selected", "mods":["SHIFT"]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Toggle Window Visibility", "mods":[]},
+                {"name":"Open Palette", "mods":["ALT"]},
+                {"name":"Show Switcher Bar", "mods":["ALT", "COMMAND"]},
+                {"name":"Layout Switch Favorites", "mods":["COMMAND"]},
+                {"name":"GL Viewport Restore Pie Menu", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Properties and Options", "mods":["SHIFT"]}
+            ],
+            "B" : [
+                {"name":"Bevel Tool", "mods":[]},
+                {"name":"Sketch Extrude Tool", "mods":["ALT"]},
+                {"name":"Make Polygon from Vertices", "mods":["COMMAND"]},
+                {"name":"Bridge Tool", "mods":["SHIFT"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Toggle Lazy Selection Mode", "mods":[]},
+                {"name":"Toggle Lazy Selection Mode", "mods":["COMMAND"]},
+                {"name":"Toggle Lazy Selection Mode", "mods":["SHIFT"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Remove", "mods":[]},
+                {"name":"Schematic View Back", "mods":["ALT"]},
+                {"name":"Collapse", "mods":["COMMAND"]},
+                {"name":"Clear Schematic", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Edge Slice Tool", "mods":[]},
+                {"name":"Loop Slice Tool", "mods":["ALT"]},
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Polygon Slice Tool", "mods":["SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Viewport Zoom Out", "mods":[]},
+                {"name":"Viewport Zoom Out x2", "mods":["SHIFT"]}
+            ],
+            "D" : [
+                {"name":"Subdivide Selected Geometry", "mods":[]},
+                {"name":"Action Center Selection Center Auto Axis", "mods":["ALT"]},
+                {"name":"Reset Tool Attributes", "mods":["COMMAND"]},
+                {"name":"Subdivide Polygon", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Select Less", "mods":[]},
+                {"name":"Schematic View Down", "mods":["ALT"]},
+                {"name":"Select Shrink", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Rotate Tool", "mods":[]},
+                {"name":"Action Center Pivot", "mods":["ALT"]},
+                {"name":"Rotate Around a Single Axis", "mods":["ALT", "SHIFT"]},
+                {"name":"Bend Tool", "mods":["COMMAND"]}
+            ],
+            "EIGHT" : [
+                {"name":"Select Layer 8", "mods":["SHIFT"]}
+            ],
+            "END" : [
+                {"name":"Reset Work Plane", "mods":[]},
+                {"name":"Last Tab", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Work Plane Properties Popover", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Focus Command Entry", "mods":[]}
+            ],
+            "EQUAL" : [
+                {"name":"Tool Handles Larger", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Escape Operation/Drop Selection", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Flip Polygons", "mods":[]},
+                {"name":"Action Center Screen", "mods":["ALT"]},
+                {"name":"Fusion Pie Menu", "mods":["COMMAND"]},
+                {"name":"Fit Curves in Graph Editor", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Items Mode", "mods":[]},
+                {"name":"Topo Pen Pie Menu", "mods":["COMMAND"]},
+                {"name":"Select Layer 5", "mods":["SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Materials Mode", "mods":[]},
+                {"name":"Topo Tools Pie Menu", "mods":["COMMAND"]},
+                {"name":"Select Layer 4", "mods":["SHIFT"]}
+            ],
+            "F1" : [
+                {"name":"Activate Help", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Render Current View", "mods":[]}
+            ],
+            "F11" : [
+                {"name":"Snapping Options", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"Config Save", "mods":["ALT"]}
+            ],
+            "F2" : [
+                {"name":"Model Tool Bar", "mods":[]},
+                {"name":"Disable Deformers", "mods":["SHIFT"]}
+            ],
+            "F3" : [
+                {"name":"Sculpt and Paint Tool Bar", "mods":[]},
+                {"name":"Enable Deformers", "mods":["SHIFT"]}
+            ],
+            "F4" : [
+                {"name":"Setup Tool Bar", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Command History", "mods":[]},
+                {"name":"Run Script", "mods":["SHIFT"]}
+            ],
+            "F6" : [
+                {"name":"Presets Viewport", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Graph Editor", "mods":[]},
+                {"name":"Dopesheet", "mods":["SHIFT"]}
+            ],
+            "F8" : [
+                {"name":"Open Preview Render", "mods":[]}
+            ],
+            "F9" : [
+                {"name":"Render", "mods":[]},
+                {"name":"Open Render Window", "mods":["ALT", "SHIFT"]},
+                {"name":"Render Visible", "mods":["COMMAND"]},
+                {"name":"Render Selected", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Center View to Cursor", "mods":[]},
+                {"name":"Group Selected Layers", "mods":["COMMAND"]},
+                {"name":"Select Between", "mods":["SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hide Selected", "mods":[]},
+                {"name":"Hide Invert", "mods":["COMMAND"]},
+                {"name":"Hide Unselected", "mods":["SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Align Work Plane to Under Cursor", "mods":[]},
+                {"name":"Align Work Plane to Viewport", "mods":["COMMAND"]},
+                {"name":"First Tab", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Align Work Plane to Selection", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Unlock", "mods":[]},
+                {"name":"Load Image...", "mods":["COMMAND"]}
+            ],
+            "J" : [
+                {"name":"Lock Selected", "mods":[]},
+                {"name":"Lock Invert", "mods":["COMMAND"]},
+                {"name":"Lock Unselected", "mods":["SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Tool Properties Pop-over", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Select Loop", "mods":[]},
+                {"name":"Select Ring", "mods":["ALT"]},
+                {"name":"Split Polygon", "mods":["COMMAND"]},
+                {"name":"Radial Sweep Tool", "mods":["SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Select Previous Loop", "mods":[]},
+                {"name":"Schematic View Left", "mods":["ALT"]},
+                {"name":"Select Previous Loop Add", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Invert", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Assign Material Group...", "mods":[]},
+                {"name":"Morph Tool", "mods":["SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Tool Handles Smaller", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Mesh Item", "mods":[]},
+                {"name":"New Scene", "mods":["COMMAND"]},
+                {"name":"Add Item Pop-Over", "mods":["SHIFT"]}
+            ],
+            "NINE" : [
+                {"name":"Select Layer 9", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name":"Set Work Plane Visibility", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Solid View", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Texture View", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Shaded View", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Subdivision Level Down", "mods":[]},
+                {"name":"Catmull-Clark Subdivision Level Down", "mods":["ALT"]},
+                {"name":"Current Level Down", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Vertex Map View", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Top/Bottom View", "mods":[]},
+                {"name":"Switch Ray GL", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Subdivision Level Up", "mods":[]},
+                {"name":"Catmull-Clark Subdivision Level Up", "mods":["ALT"]},
+                {"name":"Current Level Up", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Perspective/Camera View", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Wireframe View", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Reflection View", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Wireframe None", "mods":[]},
+                {"name":"Wireframe Dark", "mods":["COMMAND"]},
+                {"name":"Wireframe Light", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Right/Left View", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Front/Back View", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Maximize/Minimize the Viewport within the Group", "mods":[]},
+                {"name":"Default View", "mods":["COMMAND"]}
+            ],
+            "O" : [
+                {"name":"Viewport Properties", "mods":[]},
+                {"name":"Offset Workplane", "mods":["ALT"]},
+                {"name":"Open...", "mods":["COMMAND"]},
+                {"name":"Make Open Curve", "mods":["SHIFT"]}
+            ],
+            "ONE" : [
+                {"name":"Vertices Mode", "mods":[]},
+                {"name":"Convert Selection to Vertices", "mods":["ALT"]},
+                {"name":"GL Viewport Toggles", "mods":["COMMAND"]},
+                {"name":"Select Layer 1", "mods":["SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Make Polygons", "mods":[]},
+                {"name":"Make Closed Curves", "mods":["COMMAND"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Work Plane Walk In", "mods":[]},
+                {"name":"Previous Tab", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Rotate Work Plane Horizontal", "mods":["SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Work Plane Walk Out", "mods":[]},
+                {"name":"Next Tab", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Rotate Work Plane Vertical", "mods":["SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Viewport Zoom In", "mods":[]},
+                {"name":"Viewport Zoom In x2", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Drop Active Tool", "mods":[]},
+                {"name":"Selection and Transforms Pie Menu", "mods":["ALT"]},
+                {"name":"Quit", "mods":["COMMAND"]},
+                {"name":"Make quadrangles beside border edges", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Scale Tool", "mods":[]},
+                {"name":"Brings up the last tool used, ignoring UI", "mods":["ALT"]},
+                {"name":"Brings up the last tool used", "mods":["COMMAND"]},
+                {"name":"Uniform Scale Tool", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Select Next Loop", "mods":[]},
+                {"name":"Schematic View Right", "mods":["ALT"]},
+                {"name":"Select Next Loop Add", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Connected", "mods":[]},
+                {"name":"Select Close Loop", "mods":["SHIFT"]}
             ],
             "S" : [
-                {"name":"Display Viewer Settings dialog", "mods":[]}
-            ],
-            "SEMICOLON" : [
-                {"name":"Switch to the previous view in a multi-view project", "mods":[]}
+                {"name":"Key Selected Channels", "mods":[]},
+                {"name":"Action Center Selection", "mods":["ALT"]},
+                {"name":"Save", "mods":["COMMAND"]},
+                {"name":"Save As...", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Smooth", "mods":["SHIFT"]}
             ],
             "SINGLE_QUOTE" : [
-                {"name":"Show / hide all Viewers", "mods":[]}
+                {"name":"Swap Layers", "mods":[]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Select Through On/Off", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Center Mode", "mods":[]},
+                {"name":"Select Layer 7", "mods":["SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Pivot Mode", "mods":[]},
+                {"name":"Background Mesh Display", "mods":["COMMAND"]},
+                {"name":"Select Layer 6", "mods":["SHIFT"]}
+            ],
+            "SLASH" : [
+                {"name":"Viewport Turntable", "mods":[]},
+                {"name":"Display Upright Turntable", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"Cycle-through Component Modes", "mods":[]},
+                {"name":"Quick-Access Popover", "mods":["ALT"]},
+                {"name":"GL Viewport", "mods":["COMMAND"]},
+                {"name":"Toggle Component Mode to Item Mode", "mods":["SHIFT"]}
+            ],
+            "T" : [
+                {"name":"Element Move Tool", "mods":[]},
+                {"name":"Soft Drag", "mods":["COMMAND"]},
+                {"name":"Element Snap", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Triple Polygon", "mods":["SHIFT"]}
             ],
             "TAB" : [
-                {"name":"2D / 3D view toggle", "mods":[]}
+                {"name":"Toggle Subdivision", "mods":[]},
+                {"name":"Toggle HUD", "mods":["COMMAND"]},
+                {"name":"Layout switcher", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Catmull-Clark Subdivision", "mods":["SHIFT"]}
+            ],
+            "THREE" : [
+                {"name":"Polygons Mode", "mods":[]},
+                {"name":"Convert Selection to Polygons", "mods":["ALT"]},
+                {"name":"Open Pop-Over", "mods":["COMMAND"]},
+                {"name":"Select Layer 3", "mods":["SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Edges Mode", "mods":[]},
+                {"name":"Convert Selection to Edges", "mods":["ALT"]},
+                {"name":"GL Viewport Style", "mods":["COMMAND"]},
+                {"name":"Select Layer 2", "mods":["SHIFT"]}
             ],
             "U" : [
-                {"name":"Enable or disable previewing output on an external broadcast video monitor", "mods":["COMMAND"]},
-                {"name":"Update Viewer display. Used when Pause is active ", "mods":[]}
+                {"name":"Unhide", "mods":[]},
+                {"name":"Unhide All", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Select More", "mods":[]},
+                {"name":"Schematic View Up", "mods":["ALT"]},
+                {"name":"Select Grow", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Spin Edge", "mods":[]},
+                {"name":"Spin Quads Polygon", "mods":["ALT"]},
+                {"name":"Replace Keyframe", "mods":["ALT", "COMMAND"]},
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Insert Keyframe", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Mirror Tool", "mods":["SHIFT"]}
             ],
             "W" : [
-                {"name":"Activate the ROI feature, or if a ROI exists, clear the current ROI. Drag to define a new ROI", "mods":["ALT"]},
-                {"name":"Region of interest  toggle", "mods":["SHIFT"]},
-                {"name":"Toggles Viewer “blend,” split-screen display, on/off. This was previously called the “wipe” mode. ", "mods":[]}
+                {"name":"Move Tool", "mods":[]},
+                {"name":"Action Center Origin", "mods":["ALT"]},
+                {"name":"Close Scene", "mods":["COMMAND"]},
+                {"name":"Close All", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Weight Tool", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Toggle Snap State", "mods":[]},
+                {"name":"Action Center Local", "mods":["ALT"]},
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Extrude Tool", "mods":["SHIFT"]}
+            ],
+            "Y" : [
+                {"name":"Transforms Tool", "mods":[]},
+                {"name":"Flex Tool", "mods":["SHIFT"]}
             ],
             "Z" : [
-                {"name":"Toggle lock/unlock the Viewer to a specified zoom level for all inputs", "mods":["ALT"]}
+                {"name":"Edge Extend Tool", "mods":[]},
+                {"name":"Action Center Element", "mods":["ALT"]},
+                {"name":"Undo", "mods":["COMMAND"]},
+                {"name":"Redo", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"Tool Handles Style", "mods":[]},
+                {"name":"Maximize/Minimize Viewport", "mods":["ALT"]},
+                {"name":"Select Layer 10", "mods":["SHIFT"]}
+            ]
+        },
+        "Modeling: Action Center/Axis" : {
+            "A" : [
+                {"name":"Automatic", "mods":["ALT"]}
+            ],
+            "D" : [
+                {"name":"Selection center, auto axis", "mods":["ALT"]}
+            ],
+            "E" : [
+                {"name":"Pivot", "mods":["ALT"]}
+            ],
+            "F" : [
+                {"name":"Screen", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Pivot center, parent axis", "mods":["ALT"]}
+            ],
+            "Q" : [
+                {"name":"Displays pie menu", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Selection", "mods":["ALT"]}
+            ],
+            "W" : [
+                {"name":"Local", "mods":["ALT"]}
+            ],
+            "X" : [
+                {"name":"Screen", "mods":["ALT"]}
+            ],
+            "Z" : [
+                {"name":"Element", "mods":["ALT"]}
+            ]
+        },
+        "Modeling: General Modeling" : {
+            "D" : [
+                {"name":"Reset tool attributes", "mods":["COMMAND"]}
+            ],
+            "EIGHT" : [
+                {"name":"Select layer 8", "mods":["SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Tool handle larger", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Escape current operation/drop active selection", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Select layer 5", "mods":["SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Select layer 4", "mods":["SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Tool properties pop-over", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Assign material tag", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Tool handle smaller", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Select layer 9", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Decrease subdivision level", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Increase subdivision level", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Select layer 1", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Drop active tool", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Select layer 7", "mods":["SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Select layer 6", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"Cycle-through Component modes", "mods":[]},
+                {"name":"Quick access pop-over", "mods":["ALT"]},
+                {"name":"Toggle Component mode to Item mode (or last mode)", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Toggle subdivision surfaces", "mods":[]},
+                {"name":"Toggle the Tool HUD", "mods":["COMMAND"]},
+                {"name":"Toggle Catmull-Clark subdivision surfaces", "mods":["SHIFT"]}
+            ],
+            "THREE" : [
+                {"name":"Select layer 3", "mods":["SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Select layer 2", "mods":["SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"Toggle tool handle style", "mods":[]},
+                {"name":"Select layer 10", "mods":["SHIFT"]}
+            ]
+        },
+        "Modeling: Hide/Lock Geometry" : {
+            "H" : [
+                {"name":"Hide selected", "mods":[]},
+                {"name":"Hide invert (toggle state)", "mods":["COMMAND"]},
+                {"name":"Hide unselected", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Unlock", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Lock selected", "mods":[]},
+                {"name":"Lock invert (toggle state)", "mods":["COMMAND"]},
+                {"name":"Lock unselected", "mods":["SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Show", "mods":[]}
+            ]
+        },
+        "Modeling: Selection" : {
+            "A" : [
+                {"name":"Select all", "mods":["ALT", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Less (de-select last element)", "mods":[]},
+                {"name":"Shrink", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Select between", "mods":["SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Select loop", "mods":[]},
+                {"name":"Select ring", "mods":["ALT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Select previous loop", "mods":[]},
+                {"name":"Select previous loop add", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Invert selection", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Convert selection to vertices", "mods":["ALT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Select next loop", "mods":[]},
+                {"name":"Select next loop add", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Connected", "mods":[]},
+                {"name":"Close loop", "mods":["SHIFT"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Select through toggle", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Convert selection to polygons", "mods":["ALT"]}
+            ],
+            "TWO" : [
+                {"name":"Convert selection to edges", "mods":["ALT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"More (select next plausible element in loop)", "mods":[]},
+                {"name":"Select expand", "mods":["SHIFT"]}
+            ]
+        },
+        "Modeling: Snapping" : {
+            "F11" : [
+                {"name":"Open snapping pop-over", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Element snap", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Toggle snap state (hold with tool active for temporary snap)", "mods":[]}
+            ]
+        },
+        "Modeling: Tools" : {
+            "B" : [
+                {"name":"Bevel", "mods":[]},
+                {"name":"Sketch extrude", "mods":["ALT"]},
+                {"name":"Create polygon of given type from vertex selection", "mods":["COMMAND"]},
+                {"name":"Polygon Bevel", "mods":["SHIFT"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Delete", "mods":[]},
+                {"name":"Collapse", "mods":["COMMAND"]},
+                {"name":"Remove", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Edge slice", "mods":[]},
+                {"name":"Loop slice", "mods":["ALT"]},
+                {"name":"Polygon slice", "mods":["SHIFT"]}
+            ],
+            "D" : [
+                {"name":"Subdivide selected geometry", "mods":[]},
+                {"name":"Open subdivide options", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Rotate", "mods":[]},
+                {"name":"Planar rotate", "mods":["ALT", "SHIFT"]},
+                {"name":"Bend", "mods":["COMMAND"]}
+            ],
+            "F" : [
+                {"name":"Flip polygon normal", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Split face by selected vertices", "mods":["COMMAND"]},
+                {"name":"Radial sweep", "mods":["SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Morph tool", "mods":["SHIFT"]}
+            ],
+            "O" : [
+                {"name":"Make open curve", "mods":["SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Make polygon", "mods":[]},
+                {"name":"Make closed curve", "mods":["COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Grow quad row from edge", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Scale", "mods":[]},
+                {"name":"Uniform scale", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Smooth tool", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Element move (Tweak)", "mods":[]},
+                {"name":"Soft drag", "mods":["COMMAND"]},
+                {"name":"Triple polygons (convert to triangles)", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Spin edge", "mods":[]},
+                {"name":"Spin quads", "mods":["ALT"]},
+                {"name":"Mirror tool", "mods":["SHIFT"]}
+            ],
+            "W" : [
+                {"name":"Move", "mods":[]},
+                {"name":"Weight tool", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Extrude", "mods":["SHIFT"]}
+            ],
+            "Y" : [
+                {"name":"Transform", "mods":[]},
+                {"name":"Flex tool", "mods":["SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"Extend edge", "mods":[]}
+            ]
+        },
+        "Modeling: Work Plane" : {
+            "NUMPAD_ASTERISK" : [
+                {"name":"Toggle visibility", "mods":[]}
+            ],
+            "END" : [
+                {"name":"Reset the Work Plane", "mods":[]},
+                {"name":"Open Work Plane pop-over", "mods":["SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Align to geometry under cursor", "mods":[]},
+                {"name":"Align to viewport", "mods":["COMMAND"]},
+                {"name":"Align to selection (average of all selected)", "mods":["SHIFT"]}
+            ],
+            "O" : [
+                {"name":"Offset Work Plane to geometry position under cursor", "mods":["ALT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Walk -", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Walk +", "mods":[]}
+            ]
+        },
+        "Paint & Sculpt" : {
+            "B" : [
+                {"name":"Open brush tips pie menu (only when tool is active)", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Image ink scale down", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Image ink rotate right", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Image ink scale up", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Current level down", "mods":["COMMAND"]},
+                {"name":"Subdivision level down", "mods":["ALT"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Current level up", "mods":["COMMAND"]},
+                {"name":"Subdivision level up", "mods":["ALT"]}
+            ],
+            "O" : [
+                {"name":"Open large color picker pop-over (hover over UI color picker)", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Image ink rotate left", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Swap foreground/background colors", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Adjust offset amount (sticky key, only while Brush tool is active)", "mods":["SHIFT"]}
+            ]
+        },
+        "Render" : {
+            "F9" : [
+                {"name":"Render", "mods":[]},
+                {"name":"Open render display window", "mods":["ALT", "SHIFT"]},
+                {"name":"Render visible", "mods":["COMMAND"]},
+                {"name":"Render selected", "mods":["SHIFT"]}
+            ],
+            "F10" :[
+                {"name":"Render current view", "mods":[]}
+            ]
+        },
+        "Render: Preview Viewport" : {
+            "F" : [
+                {"name":"Focus under cursor", "mods":["COMMAND"]}
+            ],
+            "F8" : [
+                {"name":"Open preview viewport", "mods":[]}
+            ]
+        },
+        "Viewports: 3D viewport Options" : {
+            "NUMPAD_EIGHT" : [
+                {"name":"Solid view", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Texture view", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Shaded view", "mods":[]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Vertex Map view", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Top/Bottom view", "mods":[]},
+                {"name":"Bottom view", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Perspective view", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Wireframe view", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Wireframe None", "mods":[]},
+                {"name":"Wireframe Dark", "mods":["COMMAND"]},
+                {"name":"Wireframe Light", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Reflection view", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Right/Left view", "mods":[]},
+                {"name":"Left view", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Front/Back view", "mods":[]},
+                {"name":"Back view", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Maximize/minimize the viewport within the group", "mods":[]},
+                {"name":"Default view", "mods":["COMMAND"]}
+            ],
+            "O" : [
+                {"name":"Open the viewport options pop-over", "mods":[]}
+            ]
+        },
+        "Viewports: Channel List" : {
+            "C" : [
+                {"name":"Channel haul on (only in Items mode)", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Select modifier input", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Select modifier output", "mods":[]}
+            ]
+        },
+        "Viewports: Floating Windows" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Toggle window visibility", "mods":[]}
+            ],
+            "F11" : [
+                {"name":"Snapping pop-over", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Modeling toolbox", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Sculpt/paint toolbox", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Setup toolbox", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Command History viewport", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Presets viewport", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Graph Editor", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Render preview", "mods":[]}
+            ]
+        },
+        "Viewports: Item List" : {
+            "D" : [
+                {"name":"Duplicate selected layer(s) (only in Items mode)", "mods":["COMMAND"]},
+                {"name":"Instance selected layer(s) (only in Items mode)", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"In Items selection mode, locate selected item (layer). In other modes flip polygons", "mods":[]}
+            ],
+            "L" : [
+                {"name":"New locator item (only in Items mode)", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Mesh Item", "mods":[]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Swap foreground/background layers", "mods":[]}
+            ]
+        },
+        "Viewports: Navigation" : {
+            "A" : [
+                {"name":"Fit (zoom to scene extents/all items)", "mods":[]},
+                {"name":"Align selected (aligns view to the current selection)", "mods":["COMMAND"]},
+                {"name":"Fit and align selected (zooms and aligns the view to the current selection)", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Fit selected (zooms to selected elements)", "mods":["SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Zoom out (only in component modes)", "mods":[]},
+                {"name":"Zoom out x2", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Center View to Cursor", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Zoom in (only in component modes)", "mods":[]},
+                {"name":"Zoom in x2", "mods":["SHIFT"]}
+            ],
+            "SLASH" : [
+                {"name":"Turntable (only in component modes)", "mods":[]},
+                {"name":"When turntable is running, displays upright turntable", "mods":["SHIFT"]}
+            ]
+        },
+        "Viewports: Pie Menus" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Open palette", "mods":["ALT"]},
+                {"name":"Layout switch favorites", "mods":["COMMAND"]},
+                {"name":"Properties and options", "mods":["SHIFT"]}
+            ],
+            "B" : [
+                {"name":"Brushes pie menu (only when a Brush tool is active)", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"GL viewport toggles", "mods":["COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Selection mode/Transform tools", "mods":["ALT"]}
+            ],
+            "SPACE" : [
+                {"name":"Animation shortcuts (only in the Animation layout)", "mods":["ALT"]},
+                {"name":"GL viewport view type", "mods":["COMMAND"]}
+            ],
+            "THREE" : [
+                {"name":"Open pop-over", "mods":["COMMAND"]}
+            ],
+            "TWO" : [
+                {"name":"GL viewport style", "mods":["COMMAND"]}
+            ]
+        },
+        "Viewports: Tabbed Viewport" : {
+            "END" : [
+                {"name":"Last Tab", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"First Tab", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Previous Tab", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Next Tab", "mods":["COMMAND", "SHIFT"]}
             ]
         }
     }
