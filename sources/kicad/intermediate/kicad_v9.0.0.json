@@ -21,7 +21,7 @@
 			"Switch to Next Grid": ["N", "N"],
 			"Switch to Previous Grid": ["Shift+N", "Shift+N"],
 			"Inactive Layer View Mode (3-state)": ["H", "H"],
-			"Focus Livrary Tree Search Field": ["Ctrl+L", "Cmd+L"],
+			"Focus Library Tree Search Field": ["Ctrl+L", "Cmd+L"],
 			"Toggle Snapping Between Active and All Layers": ["Shift+S", "Shift+S"],
 			"New": ["Ctrl+N", "Cmd+N"],
 			"Open": ["Ctrl+O", "Cmd+O"],

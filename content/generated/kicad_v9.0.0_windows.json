@@ -1,0 +1,84 @@
+{
+	"name" : "Kicad",
+	"version" : "9.0.0",
+	"os" : "windows",
+	"mods_used" : ["ALT", "CONTROL", "SHIFT"],
+	"default_context" : "Common",
+	"contexts" : {
+		"Common" : {
+			"A" : [
+				{"name":"Select All", "mods":["CONTROL"]},
+				{"name":"Unselact All", "mods":["CONTROL", "SHIFT"]}
+			],
+			"C" : [
+				{"name":"Copy", "mods":["CONTROL"]},
+				{"name":"Copy as Text", "mods":["CONTROL", "SHIFT"]}
+			],
+			"COMMA" : [
+				{"name":"Preferences", "mods":["CONTROL"]}
+			],
+			"D" : [
+				{"name":"Duplicate", "mods":["CONTROL"]}
+			],
+			"DOWN_ARROW" : [
+				{"name":"Cursor Down", "mods":[]},
+				{"name":"Cursor Down Fast", "mods":["CONTROL"]}
+			],
+			"F" : [
+				{"name":"Find", "mods":["CONTROL"]},
+				{"name":"Find and Replace", "mods":["ALT","CONTROL"]}
+			],
+			"F1" : [
+				{"name":"List Hotkeys", "mods":["CONTROL"]}
+			],
+			"F3" : [
+				{"name":"Find Next", "mods":[]},
+				{"name":"Find Next Marker", "mods":["CONTROL", "SHIFT"]}
+			],
+			"F5" : [
+				{"name":"Zoom to Selection", "mods":["CONTROL"]}
+			],
+			"FOUR" : [
+				{"name":"Cycle Fast Grid", "mods":["ALT"]}
+			],
+			"G" : [
+				{"name":"Search", "mods":["CONTROL"]}
+			],
+			"HOME" : [
+				{"name":"Zoom to Objects", "mods":["CONTROL"]}
+			],
+			"L" : [
+				{"name":"Focus Library Tree Search Field", "mods":["CONTROL"]}
+			],
+			"LEFT_ARROW" : [
+				{"name":"Cursor Left", "mods":[]},
+				{"name":"Cursor Left Fast", "mods":["CONTROL"]}
+			],
+			"N" : [
+				{"name":"New", "mods":["CONTROL"]}
+			],
+			"O" : [
+				{"name":"Open", "mods":["CONTROL"]}
+			],
+			"ONE" : [
+				{"name":"Switch to Fast Grid 1", "mods":["ALT"]}
+			],
+			"P" : [
+				{"name":"Print", "mods":["CONTROL"]}
+			],
+			"RIGHT_ARROW" : [
+				{"name":"Cursor Right", "mods":[]},
+				{"name":"Cursor Right Fast", "mods":["CONTROL"]}
+			],
+			"S" : [
+				{"name":"Save", "mods":["CONTROL"]}
+			],
+			"THREE" : [
+				{"name":"3D Viewer", "mods":["ALT"]}
+			],
+			"TWO" : [
+				{"name":"Switch to Fast Grid 2", "mods":["ALT"]}
+			]
+		}
+	}
+}
