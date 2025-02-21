@@ -5,6 +5,56 @@
 	"mods_used" : ["ALT", "CONTROL", "SHIFT"],
 	"default_context" : "Common",
 	"contexts" : {
+		"3D Viewer" : {
+			"D" : [
+				{"name":"Show 3D Models marked DNP", "mods":[]}
+			],
+			"DOWN_ARROW" : [
+				{"name":"Move Board Down", "mods":[]}
+			],
+			"F" : [
+				{"name":"Filp Board", "mods":[]}
+			],
+			"HOME" : [
+				{"name":"Home View", "mods":[]}
+			],
+			"LEFT_ARROW" : [
+				{"name":"Move Board Left", "mods":[]}
+			],
+			"P" : [
+				{"name":"Show 3D Models not in POS File", "mods":[]}
+			],
+			"RIGHT_ARROW" : [
+				{"name":"Move Board Right", "mods":[]}
+			],
+			"S" : [
+				{"name":"Show SMD 3D Models", "mods":[]}
+			],
+			"SPACE" : [
+				{"name":"Set Pivot", "mods":[]}
+			],
+			"T" : [
+				{"name":"Show Through Hole 3D Models", "mods":[]}
+			],
+			"UP_ARROW" : [
+				{"name":"Move Board Up", "mods":[]}
+			],
+			"V" : [
+				{"name":"Show Unspecified 3D Models", "mods":[]}
+			],
+			"X" : [
+				{"name":"View Right", "mods":[]},
+				{"name":"View Left", "mods":["SHIFT"]}
+			],
+			"Y" : [
+				{"name":"View Front", "mods":[]},
+				{"name":"View Back", "mods":["SHIFT"]}
+			],
+			"Z" : [
+				{"name":"View Top", "mods":[]},
+				{"name":"View Bottom", "mods":["SHIFT"]}
+			]
+		},
 		"Common" : {
 			"A" : [
 				{"name":"Select All", "mods":["CONTROL"]},
@@ -14,15 +64,16 @@
 				{"name":"Copy", "mods":["CONTROL"]},
 				{"name":"Copy as Text", "mods":["CONTROL", "SHIFT"]}
 			],
-			"COMMA" : [
-				{"name":"Preferences", "mods":["CONTROL"]}
-			],
 			"D" : [
 				{"name":"Duplicate", "mods":["CONTROL"]}
 			],
 			"DOWN_ARROW" : [
 				{"name":"Cursor Down", "mods":[]},
-				{"name":"Cursor Down Fast", "mods":["CONTROL"]}
+				{"name":"Cursor Down Fast", "mods":["CONTROL"]},
+				{"name":"Pan Down", "mods":["SHIFT"]}
+			],
+			"ENTER" : [
+				{"name":"Click", "mods":[]}
 			],
 			"F" : [
 				{"name":"Find", "mods":["CONTROL"]},
@@ -33,7 +84,8 @@
 			],
 			"F3" : [
 				{"name":"Find Next", "mods":[]},
-				{"name":"Find Next Marker", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Find Next Marker", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Find Previous", "mods":["SHIFT"]}
 			],
 			"F5" : [
 				{"name":"Zoom to Selection", "mods":["CONTROL"]}
@@ -52,10 +104,12 @@
 			],
 			"LEFT_ARROW" : [
 				{"name":"Cursor Left", "mods":[]},
-				{"name":"Cursor Left Fast", "mods":["CONTROL"]}
+				{"name":"Cursor Left Fast", "mods":["CONTROL"]},
+				{"name":"Pan Left", "mods":["SHIFT"]}
 			],
 			"N" : [
-				{"name":"New", "mods":["CONTROL"]}
+				{"name":"New", "mods":["CONTROL"]},
+				{"name":"Switch to Next Grid", "mods":["SHIFT"]}
 			],
 			"O" : [
 				{"name":"Open", "mods":["CONTROL"]}
@@ -68,17 +122,225 @@
 			],
 			"RIGHT_ARROW" : [
 				{"name":"Cursor Right", "mods":[]},
-				{"name":"Cursor Right Fast", "mods":["CONTROL"]}
+				{"name":"Cursor Right Fast", "mods":["CONTROL"]},
+				{"name":"Pan Right", "mods":["SHIFT"]}
 			],
 			"S" : [
-				{"name":"Save", "mods":["CONTROL"]}
+				{"name":"Save", "mods":["CONTROL"]},
+				{"name":"Toggle Snapping Between Active and All Layers", "mods":["SHIFT"]}
+			],
+			"SINGLE_QUOTE" : [
+				{"name":"Preferences", "mods":["CONTROL"]}
+			],
+			"SPACE" : [
+				{"name":"Reset Local Coordinates", "mods":[]}
 			],
 			"THREE" : [
 				{"name":"3D Viewer", "mods":["ALT"]}
 			],
 			"TWO" : [
 				{"name":"Switch to Fast Grid 2", "mods":["ALT"]}
+			],
+			"UP_ARROW" : [
+				{"name":"Cursor Up", "mods":[]},
+				{"name":"Cursor Up Fast", "mods":["CONTROL"]},
+				{"name":"Pan Up", "mods":["SHIFT"]}
 			]
+		},
+		"Drawing Sheet Editor" : {
+			"M" : [
+				{"name":"Move", "mods":[]}
+			]
+		},
+		"Gerber Viewer" : {
+			"D" : [
+				{"name":"Show Dcodes", "mods":[]}
+			],
+			"EQUAL" : [
+				{"name":"Move Layer Up", "mods":[]}
+			],
+			"F" : [
+				{"name":"Sketch Flashed Item", "mods":[]}
+			],
+			"L" : [
+				{"name":"Sketch Lines", "mods":[]}
+			],
+			"MINUS" : [
+				{"name":"Move Layer Down", "mods":[]}
+			],
+			"P" : [
+				{"name":"Polygons", "mods":[]}
+			],
+			"PAGE_DOWN" : [
+				{"name":"Next Layer", "mods":[]}
+			],
+			"PAGE_UP" : [
+				{"name":"Previous", "mods":[]}
+			]
+		},
+		"PCB Editor" : {
+			"A" : [
+				{"name":"Place Footprints", "mods":[]},
+				{"name":"Draw Arcs", "mods":["CONTROL", "SHIFT"]}
+			],
+			"ACCENT_GRAVE" : [
+				{"name":"Highlight Net", "mods":[]},
+				{"name":"Toggle Net Highlight", "mods":["ALT"]}
+			],
+			"B" : [
+				{"name":"Fill All Zones", "mods":[]},
+				{"name":"Unfill All Zones", "mods":["CONTROL"]},
+				{"name":"Draw Bezier Curve", "mods":["CONTROL", "SHIFT"]}
+			],
+			"BACKSLASH" : [
+				{"name":"Decrease Via Size", "mods":[]}
+			],
+			"BACKSPACE" : [
+				{"name":"Delete Last Point/Undo Last Segment", "mods":[]}
+			],
+			"C" : [
+				{"name":"Draw Circles", "mods":["CONTROL", "SHIFT"]}
+			],
+			"COMMA" : [
+				{"name":"Select Layer and Place Through Via", "mods":[]},
+				{"name":"Select Layer and Place Blind/Buried Via", "mods":["ALT"]},
+				{"name":"Interactive Route Settings", "mods":["CONTROL"]}
+			],
+			"D" : [
+				{"name":"Drag 45 Degree Mode", "mods":[]},
+				{"name":"Duplicate and Increment", "mods":["CONTROL", "SHIFT"]}
+			],
+			"E" : [
+				{"name":"Properties", "mods":[]},
+				{"name":"Open in Footprint Editor/Route From Other End/etc.", "mods":["CONTROL"]},
+				{"name":"Edit Library Footprint", "mods":["CONTROL", "SHIFT"]}
+			],
+			"EIGHT" : [
+				{"name":"Turn Length of a Differential Pair", "mods":[]}
+			],
+			"EQUAL" : [
+				{"name":"Switch to Next Layer", "mods":[]},
+				{"name":"Increase Line Width", "mods":["CONTROL"]}
+			],
+			"F" : [
+				{"name":"Attempt Finish/Change Side/Flip", "mods":[]},
+				{"name":"Import Graphics", "mods":["CONTROL", "SHIFT"]}
+			],
+			"FOUR" : [
+				{"name":"Decrease Amplitude", "mods":[]}
+			],
+			"G" : [
+				{"name":"Drag Free Angle", "mods":[]}
+			],
+			"H" : [
+				{"name":"Draw Orthogonal Dimensions", "mods":["CONTROL", "SHIFT"]}
+			],
+			"INSERT" : [
+				{"name":"Create Corner", "mods":[]}
+			],
+			"K" : [
+				{"name":"Sketch Tracks", "mods":[]},
+				{"name":"Draw Rule Areas", "mods":["CONTROL", "SHIFT"]}
+			],
+			"L" : [
+				{"name":"Toggle Lock", "mods":[]},
+				{"name":"Draw Line", "mods":["CONTROL", "SHIFT"]}
+			],
+			"LEFT_BRACKET" : [
+				{"name":"Decrease Layer Opacity", "mods":[]}
+			],
+			"M" : [
+				{"name":"Move", "mods":[]},
+				{"name":"Move Individually", "mods":["CONTROL"]}
+			],
+			"MINUS" : [
+				{"name":"Switch to Previous Layer", "mods":[]},
+				{"name":"Decrease Line Width", "mods":["CONTROL"]}
+			],
+			"N" : [
+				{"name":"New Footprint", "mods":["CONTROL"]},
+				{"name":"Place the Footprint Anchor", "mods":["CONTROL", "SHIFT"]}
+			],
+			"NINE" : [
+				{"name":"Turn Skew of a Differential Pair", "mods":[]}
+			],
+			"O" : [
+				{"name":"Select All Unconnected Footprint", "mods":[]}
+			],
+			"ONE" : [
+				{"name":"Increase Spacing", "mods":[]}
+			],
+			"P" : [
+				{"name":"Pack and Move Footprint", "mods":[]},
+				{"name":"Draw Polygons", "mods":["CONTROL", "SHIFT"]}
+			],
+			"PAGE_DOWN" : [
+				{"name":"Switch to Copper (B.Cu) Layer", "mods":[]}
+			],
+			"PAGE_UP" : [
+				{"name":"Switch to Component (F.Cu) Layer", "mods":[]}
+			],
+			"PERIOD" : [
+				{"name":"Add a Similar Zone", "mods":["CONTROL", "SHIFT"]}
+			],
+			"Q" : [
+				{"name":"Custom Track/Via Size", "mods":[]}
+			],
+			"R" : [
+				{"name":"Rotate Counterclockwise", "mods":[]}
+			],
+			"RIGHT_BRACKET" : [
+				{"name":"Increase Layer Opacity", "mods":[]}
+			],
+			"S" : [
+				{"name":"Swap", "mods":["ALT"]}
+			],
+			"SEVEN" :[
+				{"name":"Turn Length of a Single Track", "mods":[]}
+			],
+			"SINGLE_QUOTE" : [
+				{"name":"Increase Via Size", "mods":[]}
+			],
+			"SIX" : [
+				{"name":"Route Differential Pair", "mods":[]}
+			],
+			"SLASH" : [
+				{"name":"Switch Arc/Track Posture", "mods":[]},
+				{"name":"Track Corner Mode", "mods":["CONTROL"]}
+			],
+			"T" : [
+				{"name":"Get and Move Footprint", "mods":[]},
+				{"name":"Create Array", "mods":["CONTROL"]},
+				{"name":"Draw Text", "mods":["CONTROL", "SHIFT"]}
+			],
+			"TAB" : [
+				{"name":"Skip", "mods":[]}
+			],
+			"THREE" : [
+				{"name":"Increase Amplitude", "mods":[]}
+			],
+			"TWO" : [
+				{"name":"Decrease Spacing", "mods":[]}
+			],
+			"U" : [
+				{"name":"Select/Expand Connection", "mods":[]}
+			],
+			"V" : [
+				{"name":"Toggle Layer/Place Through Via", "mods":[]},
+				{"name":"Place Microvia", "mods":["CONTROL"]},
+				{"name":"Place Blind/Buried Via", "mods":["ALT", "SHIFT"]}
+			],
+			"W" : [
+				{"name":"Switch Track Width to Next", "mods":[]}
+			],
+			"X" : [
+				{"name":"Place Vias", "mods":["CONTROL", "SHIFT"]}
+			],
+			"Z" : [
+				{"name":"Draw Filled Zones", "mods":["CONTROL", "SHIFT"]}
+			]
+		},
+		"Schematic Editor" : {
 		}
 	}
 }
