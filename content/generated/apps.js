@@ -148,6 +148,14 @@ var sitedata_apps = [
         }
     },
     {
+        name: "Kicad",
+        data: {
+            "v9.0.0": {
+                "windows": "kicad_v9.0.0_windows.json",
+            },
+        }
+    },
+    {
         name: "SideFx Houdini",
         data: {
             "v15.5": {
