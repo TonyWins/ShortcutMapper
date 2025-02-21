@@ -199,7 +199,8 @@
 				{"name":"Delete Last Point/Undo Last Segment", "mods":[]}
 			],
 			"C" : [
-				{"name":"Draw Circles", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Draw Circles", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Add a Zone Cutout", "mods":["SHIFT"]}
 			],
 			"COMMA" : [
 				{"name":"Select Layer and Place Through Via", "mods":[]},
@@ -210,10 +211,14 @@
 				{"name":"Drag 45 Degree Mode", "mods":[]},
 				{"name":"Duplicate and Increment", "mods":["CONTROL", "SHIFT"]}
 			],
+			"DELETE" : [
+				{"name":"Delete Full Track", "mods":["SHIFT"]}
+			],
 			"E" : [
 				{"name":"Properties", "mods":[]},
 				{"name":"Open in Footprint Editor/Route From Other End/etc.", "mods":["CONTROL"]},
-				{"name":"Edit Library Footprint", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Edit Library Footprint", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Route Selected From Other End", "mods":["SHIFT"]}
 			],
 			"EIGHT" : [
 				{"name":"Turn Length of a Differential Pair", "mods":[]}
@@ -224,7 +229,8 @@
 			],
 			"F" : [
 				{"name":"Attempt Finish/Change Side/Flip", "mods":[]},
-				{"name":"Import Graphics", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Import Graphics", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Attempt Finish Selected (Autoroute)", "mods":["SHIFT"]}
 			],
 			"FOUR" : [
 				{"name":"Decrease Amplitude", "mods":[]}
@@ -251,7 +257,8 @@
 			],
 			"M" : [
 				{"name":"Move", "mods":[]},
-				{"name":"Move Individually", "mods":["CONTROL"]}
+				{"name":"Move Individually", "mods":["CONTROL"]},
+				{"name":"Move Exacitly", "mods":["SHIFT"]}
 			],
 			"MINUS" : [
 				{"name":"Switch to Previous Layer", "mods":[]},
@@ -265,14 +272,16 @@
 				{"name":"Turn Skew of a Differential Pair", "mods":[]}
 			],
 			"O" : [
-				{"name":"Select All Unconnected Footprint", "mods":[]}
+				{"name":"Select All Unconnected Footprint", "mods":[]},
+				{"name":"Grab Nearest Unconnected Footprints", "mods":["SHIFT"]}
 			],
 			"ONE" : [
 				{"name":"Increase Spacing", "mods":[]}
 			],
 			"P" : [
 				{"name":"Pack and Move Footprint", "mods":[]},
-				{"name":"Draw Polygons", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Draw Polygons", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Position Relative To", "mods":["SHIFT"]}
 			],
 			"PAGE_DOWN" : [
 				{"name":"Switch to Copper (B.Cu) Layer", "mods":[]}
@@ -287,7 +296,8 @@
 				{"name":"Custom Track/Via Size", "mods":[]}
 			],
 			"R" : [
-				{"name":"Rotate Counterclockwise", "mods":[]}
+				{"name":"Rotate Counterclockwise", "mods":[]},
+				{"name":"Rotate Clockwise", "mods":["SHIFT"]}
 			],
 			"RIGHT_BRACKET" : [
 				{"name":"Increase Layer Opacity", "mods":[]}
@@ -307,6 +317,9 @@
 			"SLASH" : [
 				{"name":"Switch Arc/Track Posture", "mods":[]},
 				{"name":"Track Corner Mode", "mods":["CONTROL"]}
+			],
+			"SPACE" : [
+				{"name":"Constrain to H, V, 45", "mods":["SHIFT"]}
 			],
 			"T" : [
 				{"name":"Get and Move Footprint", "mods":[]},
@@ -328,19 +341,141 @@
 			"V" : [
 				{"name":"Toggle Layer/Place Through Via", "mods":[]},
 				{"name":"Place Microvia", "mods":["CONTROL"]},
-				{"name":"Place Blind/Buried Via", "mods":["ALT", "SHIFT"]}
+				{"name":"Place Blind/Buried Via", "mods":["ALT", "SHIFT"]},
+				{"name":"Cycle Layer Pair Presets", "mods":["SHIFT"]}
 			],
 			"W" : [
-				{"name":"Switch Track Width to Next", "mods":[]}
+				{"name":"Switch Track Width to Next", "mods":[]},
+				{"name":"Switch Track Width to Previous", "mods":["SHIFT"]}
 			],
 			"X" : [
-				{"name":"Place Vias", "mods":["CONTROL", "SHIFT"]}
+				{"name":"Place Vias", "mods":["CONTROL", "SHIFT"]},
+				{"name":"Route Selected", "mods":["SHIFT"]}
 			],
 			"Z" : [
 				{"name":"Draw Filled Zones", "mods":["CONTROL", "SHIFT"]}
 			]
 		},
 		"Schematic Editor" : {
+			"A" : [
+				{"name":"Place Symbol", "mods":[]}
+			],
+			"ACCENT_GRAVE" : [
+				{"name":"Highlight Net", "mods":[]}
+			],
+			"B" : [
+				{"name":"Draw Buses", "mods":[]},
+				{"name":"Place Design Block", "mods":["SHIFT"]}
+			],
+			"BACKSPACE" : [
+				{"name":"Undo Last Segment", "mods":[]},
+				{"name":"Leave Sheet", "mods":["ALT"]}
+			],
+			"C" : [
+				{"name":"Unfold from Bus", "mods":[]}
+			],
+			"E" : [
+				{"name":"Properties", "mods":[]},
+				{"name":"Edit wityh Symbol Editor", "mods":["CONTROL"]},
+				{"name":"Edit Library Symbol", "mods":["CONTROL", "SHIFT"]}
+			],
+			"F" : [
+				{"name":"Edit Footprint", "mods":[]},
+				{"name":"Import Graphics", "mods":["CONTROL", "SHIFT"]}
+			],
+			"FOUR" : [
+				{"name":"Select Connection", "mods":["CONTROL"]}
+			],
+			"G" : [
+				{"name":"Drag", "mods":[]}
+			],
+			"H" : [
+				{"name":"Place Hierarchical Labels", "mods":[]},
+				{"name":"Hierarchy Navigator", "mods":["CONTROL"]}
+			],
+			"I" : [
+				{"name":"Draw Lines", "mods":[]}
+			],
+			"INSERT" : [
+				{"name":"Repeat Last Item", "mods":[]}
+			],
+			"J" : [
+				{"name":"Place Junctions", "mods":[]}
+			],
+			"L" : [
+				{"name":"Place Net Labels", "mods":[]},
+				{"name":"Place Golbal Labels", "mods":["CONTROL"]}
+			],
+			"LEFT_ARROW" : [
+				{"name":"Navigate Back", "mods":["ALT"]}
+			],
+			"M" : [
+				{"name":"Move", "mods":[]}
+			],
+			"N" : [
+				{"name":"New Symbol/New Analysis Tab", "mods":["CONTROL"]}
+			],
+			"O" : [
+				{"name":"Autoplace Fields", "mods":[]},
+				{"name":"Open Workbook", "mods":["CONTROL"]}
+			],
+			"P" : [
+				{"name":"Place Pw Symbol/Draw Pins/Probe Schematic", "mods":[]}
+			],
+			"PAGE_DOWN" : [
+				{"name":"Next Sheet", "mods":[]}
+			],
+			"PAGE_UP" : [
+				{"name":"Previous Sheet", "mods":[]}
+			],
+			"Q" : [
+				{"name":"Place No Connect Flags", "mods":[]}
+			],
+			"R" : [
+				{"name":"Rotate CCW/Run Simulation", "mods":[]}
+			],
+			"RIGHT_ARROW" : [
+				{"name":"Navigate Forward", "mods":["ALT"]}
+			],
+			"S" : [
+				{"name":"Draw Hierachical Sheets", "mods":[]},
+				{"name":"Swap", "mods":["ALT"]},
+				{"name":"Save Workbook", "mods":["CONTROL"]},
+				{"name":"Save Library/Save Workbook As", "mods":["CONTROL", "SHIFT"]}
+			],
+			"SLASH" : [
+				{"name":"Switch Segment Posture", "mods":[]}
+			],
+			"SPACE" : [
+				{"name":"Line Model for Wires and Buses", "mods":["SHIFT"]}
+			],
+			"T" : [
+				{"name":"Draw Text/Add Tuned Value", "mods":[]}
+			],
+			"THREE" : [
+				{"name":"Select Node", "mods":["ALT"]}
+			],
+			"U" : [
+				{"name":"Edit Reference Designator", "mods":[]}
+			],
+			"UP_ARROW" : [
+				{"name":"Navigate Up", "mods":["ALT"]}
+			],
+			"V" : [
+				{"name":"Edit Value", "mods":[]}
+			],
+			"W" : [
+				{"name":"Draw Wries", "mods":[]}
+			],
+			"X" : [
+				{"name":"Mirror Horizontally", "mods":[]}
+			],
+			"Y" : [
+				{"name":"Mirror Vertically", "mods":[]}
+			],
+			"Z" : [
+				{"name":"Place Wire to Bus Entries", "mods":[]}
+			]
 		}
 	}
 }
